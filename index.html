@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffa500;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 700;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    margin-bottom: 1.5rem;
+}
+
+.intro-text button {
+    background-color: #ffa500;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+}
+
+.contact {
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.contact input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 25px;
+    background-color: #222;
+    color: #fff;
+}
+
+.contact input:focus {
+    outline: none;
+    border-color: #ffa500;
+}
+
+.contact button {
+    display: block;
+    width: 50%;
+    padding: 0.75rem;
+    background-color: #ffa500;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 25px;
+    
+}
+
+.table-section {
+    padding: 2rem;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-section th, .table-section td {
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+.table-section th {
+    background-color: #ffa500;
+    color: #121212;
+}
+
+.table-section tfoot td {
+    background-color: #ffa500;
+    color: #121212;
+    font-weight: bold;
+    text-align: center;
+}
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">Startup Landing Page</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h1>Startup Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button>Login</button>
+        </div>
+        <div class="intro-image">
+            <img src="https://s3-alpha-sig.figma.com/img/1bfe/0656/5ce73b370dc5f157ffb73c5df166e15b?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bZinhj7JzXSvG-eHfi1VKh-4w1jw-iwPS2wtXwgYDXOZ218xcmjjPkyUbkIzR6CwJMlqSo0adOph3ndsa53HtkzB9aQyoD0sPhD0z8XImoENVoe1nF11hRnKe41IXnewuO4syXvPDxm6PHd94VFi~PIaX7KykALh0PgpMdf85I9rRaJ-HzJx0UiWxWjRrPfXSj0~iSkBF7C4z64eka5r8hrncdNAkw9iOwDrgClSTUnNhit7fDgav3XlJKXe9nr8Pi5Eurm0FKm3-rt-UgSWliaqxUpmOTiiRyN4UEdYEJTDHlXgISt3e9ZLYZlXqPvIByUVoEslfGPPfljMbNaqvA__" alt="Jeff Bezos">
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="text" placeholder="City" required>
+            </div>
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>SNQ.</th>
+                    <th>Startup Name</th>
+                    <th>Startup Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>WowIndia</td>
+                    <td>A startup with WOW ideas.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>00.</td>
+                    <td>Final Footer</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+</html>

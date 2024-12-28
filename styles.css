@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffa500;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 700;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    margin-bottom: 1.5rem;
+}
+
+.intro-text button {
+    background-color: #ffa500;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.contact input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 25px;
+    background-color: #222;
+    color: #fff;
+}
+
+.contact input:focus {
+    outline: none;
+    border-color: #ffa500;
+}
+
+.contact button {
+    display: block;
+    width: 80%;
+    padding: 0.75rem;
+    background-color: #ffa500;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.table-section {
+    padding: 2rem;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-section th, .table-section td {
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+.table-section th {
+    background-color: #ffa500;
+    color: #121212;
+}
+
+.table-section tfoot td {
+    background-color: #ffa500;
+    color: #121212;
+    font-weight: bold;
+    text-align: center;
+}
